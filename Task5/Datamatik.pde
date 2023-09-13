@@ -13,8 +13,9 @@ void setup() {
   
   //prints out if classmates or not
   boolean isClassmates = isClassmates(student1, student2);
-  String result = (isClassmates)? student1.name + " and " + student2.name + " are classmates.":
-  student1.name + " and " + student2.name + " are not classmates.";
+  String studentNames = student1.name + " and " + student2.name;
+  String result = (isClassmates)? studentNames + " are classmates.":
+  studentNames + " are not classmates.";
   println(result);
 }
 
